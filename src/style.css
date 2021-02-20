@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.container-fluid .stats ul {
+    display: flex;
+    list-style: none;
+    margin-top: .5rem;
+    padding-top: .5rem;
+}
+
+.container-fluid .stats ul {
+    display: flex;
+    list-style: none;
+    margin: .5rem;
+    justify-content: center;
+    font-size: 11px;
+    align-items: center;
+}
+
+.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+    font-size: 11px;
+}
+
+.stats ul li {
+    padding-left: 1.2rem;
+}
+
+.drop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+}
+
+.drop button {
+    outline: none;
+    border: 0;
+    margin: 0!important;
+    font-size: 11px!important;
+    width: 80%!important;
+    background: transparent;
+    margin-top: -.5rem!important;
+    padding: 5px!important;
+}
+
+.drop .selectpicker {
+    width: 50%!important;
+}
+
+.drop button:focus {
+    background: #fff!important;
+}
+
+.drop .flag-icon {
+    border-radius: 10px!important;
+    text-align: center;
+    width: 5rem;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.drop .currencies .flag-icon {
+    border-radius: 50%;
+    padding-left: 0!important;
+    padding: 0!important;
+}

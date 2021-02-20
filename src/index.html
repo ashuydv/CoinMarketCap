@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="//unpkg.com/bootstrap-select@1.12.4/dist/css/bootstrap-select.min.css" type="text/css" />
+    <link rel="stylesheet" href="//unpkg.com/bootstrap-select-country@4.0.0/dist/css/bootstrap-select-country.min.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/20c3a47add.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" integrity="sha512-Cv93isQdFwaKBV+Z4X8kaVBYWHST58Xb/jVOcV9aRsGSArZsgAnFIhMpDoMDcFNoUtday1hdjn0nGp3+KZyyFw==" crossorigin="anonymous" />
+    <title>Coin Market Cap</title>
+</head>
+
+<body>
+    <!-- Header start -->
+
+    <header>
+        <div class="container-fluid">
+            <div class="stats">
+                <ul>
+                    <li>
+                        <p>Crytocurrencies: <a href="stats">8,484</a></p>
+                    </li>
+                    <li>
+                        <p>Markets: <a href="stats">33, 849</a></p>
+                    </li>
+                    <li>
+                        <p>Market Cap: <a href="stats">$1,491,329,965,011</a></p>
+                    </li>
+                    <li>
+                        <p>24h Vol: <a href="stats">$198,129,891,855</a></p>
+                    </li>
+                    <li>
+                        <p>BTC Dominance: <a href="stats">61.4%</a></p>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="drop">
+                <div class="lang">
+                    <select class="selectpicker" data-live-search="true">
+                        <optgroup label="Popular Languages" class="popLang">    
+                            <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                            <option data-content='<span class="flag-icon flag-icon-ru"></span> Русский'>Русский</option>
+                            <option  data-content='<span class="flag-icon flag-icon-vi"></span> Tiếng Việt'>Tiếng Việt</option>
+                            <option data-content='<span class="flag-icon flag-icon-tr"></span> Türkçe'>Türkçe</option>
+                            <option  data-content='<span class="flag-icon flag-icon-es"></span> Español'>Español</option>
+                            <option data-content='<span class="flag-icon flag-icon-cz"></span> čeština'>čeština</option>
+                            <option  data-content='<span class="flag-icon flag-icon-dm"></span> dansk'>dansk</option>
+                            <option  data-content='<span class="flag-icon flag-icon-de"></span> Deutsch'>Deutsch</option>
+                            <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                            <option  data-content='<span class="flag-icon flag-icon-es"></span> Español'>Español</option>
+                        </optgroup>
+                        <optgroup label="All Languages" class="allLang">
+                            <option data-content='<span class="flag-icon flag-icon-fi"></span> Filipino'>Filipino</option>
+                            <option  data-content='<span class="flag-icon flag-icon-fr"></span> Français'>Français</option>
+                            <option data-content='<span class="flag-icon flag-icon-in"></span> हिन्दी'>हिन्दी</option>
+                            <option  data-content='<span class="flag-icon flag-icon-hu"></span> magyar'>magyar</option>
+                            <option data-content='<span class="flag-icon flag-icon-id"></span> Bahasa Indonesia'>Bahasa Indonesia</option>
+                            <option  data-content='<span class="flag-icon flag-icon-it"></span> Italiano'>Italiano</option>
+                            <option data-content='<span class="flag-icon flag-icon-jp"></span> 日本語'>日本語</option>
+                            <option  data-content='<span class="flag-icon flag-icon-kr"></span> 한국어'>한국어</option>
+                            <option data-content='<span class="flag-icon flag-icon-nl"></span> Nederlands'>Nederlands</option>
+                            <option  data-content='<span class="flag-icon flag-icon-no"></span> Norsk'>Norsk</option>
+                            <option data-content='<span class="flag-icon flag-icon-pl"></span> język polski'>język polski</option>
+                            <option  data-content='<span class="flag-icon flag-icon-pt"></span> Português Brasil'>Português Brasil</option>
+                            <option data-content='<span class="flag-icon flag-icon-ro"></span> Română'>Română</option>
+                            <option  data-content='<span class="flag-icon flag-icon-ru"></span> Русский'>Русский</option>
+                            <option data-content='<span class="flag-icon flag-icon-sk"></span> Slovenčina'>Slovenčina</option>
+                            <option  data-content='<span class="flag-icon flag-icon-sv"></span> Svenska'>Svenska</option>
+                            <option data-content='<span class="flag-icon flag-icon-th"></span> ไทย'>ไทย</option>
+                            <option  data-content='<span class="flag-icon flag-icon-tr"></span> Türkçe'>Türkçe</option>
+                            <option data-content='<span class="flag-icon flag-icon-vi"></span> Tiếng Việt'>Tiếng Việt</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="currencies">
+                    <select class="selectpicker " data-live-search="true">
+                        <optgroup label="Popular Currencies">
+                            <option data-content='<i class="fas fa-usd-circle"></i> Dollar'>United States Dollar</option>
+                            <option data-content='<i class="fas fa-euro-sign"></i> Euro'>Euro</option>
+                            <option data-content='<i class="fab fa-bitcoin"></i> Bitcoin'>Bitcoin</option>
+                            <option data-content='<i class="fab fa-ethereum"></i> Ethereum'>Ethereum</option>
+                        </optgroup>
+                        <optgroup label="Fiat Currencies">
+                            <option data-content='<i class="fas fa-usd-circle"></i> Dollar'>United States Dollar</option>
+                            <option data-content='<span class="flag-icon flag-icon-au "></span> Australian Dollar'>Australian Dollar</option>
+                            <option data-content='<span class="flag-icon flag-icon-br "></span> Brazilian Real'>Brazilian Real</option>
+                            <option data-content='<span class="flag-icon flag-icon-ca "></span> Canadian Dollar'>Canadian Dollar</option>
+                            <option data-content='<span class="flag-icon flag-icon-fr "></span> Swiss Franc'>Swiss Franc</option>
+                            <option data-content='<span class="flag-icon flag-icon-cl "></span> Chilean Peso'>Chilean Peso</option>
+                            <option data-content='<span class="flag-icon flag-icon-ch "></span> Chinese Yuan'>Chinese Yuan</option>
+                            <option data-content='<span class="flag-icon flag-icon-cz "></span> Czech Koruna'>Czech Koruna</option>
+                            <option data-content='<span class="flag-icon flag-icon-dk "></span> Danish Krone'>Danish Krone</option>
+                            <option data-content='<i class="fas fa-euro-sign"></i> Euro'>Euro</option>
+                            <option data-content='<span class="flag-icon flag-icon-gb "></span> Pound Sterling'>Pound Sterling</option>
+                            <option data-content='<span class="flag-icon flag-icon-hk "></span> Hong Kong Dollar'>Hong Kong Dollar</option>
+                            <option data-content='<span class="flag-icon flag-icon-hu "></span> Hungarian Forint'>Hungarian Forint</option>
+                            <option data-content='<span class="flag-icon flag-icon-id "></span> Indonesian Rupiah'>Indonesian Rupiah</option>
+                            <option data-content='<span class="flag-icon flag-icon-il "></span> Israeli New Shekel'>Israeli New Shekel</option>
+                            <option data-content='<span class="flag-icon flag-icon-in "></span> Indian Rupee'>Indian Rupee</option>
+                            <option data-content='<span class="flag-icon flag-icon-jp "></span> Japanese Yen'>Japanese Yen</option>
+                            <option data-content='<span class="flag-icon flag-icon-kr "></span> South Korean Won'>South Korean Won</option>
+                            <option data-content='<span class="flag-icon flag-icon-mx "></span> Mexican Peso'>Mexican Peso</option>
+                            <option data-content='<span class="flag-icon flag-icon-my "></span> Malaysian Ringgit'>Malaysian Ringgit</option>
+                            <option data-content='<span class="flag-icon flag-icon-no "></span> Norwegian Krone'>Norwegian Krone</option>
+                            <option data-content='<span class="flag-icon flag-icon-nz "></span> New Zealand Dollar'>New Zealand Dollar</option>
+                            <option data-content='<span class="flag-icon flag-icon-ph "></span> Phillipine Peso'> Phillipine Peso</option>
+                            <option data-content='<span class="flag-icon flag-icon-pk "></span> Pakistani Rupee'>Pakistani Rupee</option>
+                            <option data-content='<span class="flag-icon flag-icon-pl "></span> Polish Zloty'>Polish Zloty</option>
+                            <option data-content='<span class="flag-icon flag-icon-ru "></span> Russian Ruble'>Russian Ruble</option>
+                            <option data-content='<span class="flag-icon flag-icon-se "></span> Swedish Krona'>Swedish Krona</option>
+                            <option data-content='<span class="flag-icon flag-icon-sg "></span> Singapore Dollar'>Singapore Dollar</option>
+                            <option data-content='<span class="flag-icon flag-icon-th "></span> Thai Bat'>Thai Bat</option>
+                            <option data-content='<span class="flag-icon flag-icon-tr "></span> Turkish Lira'>Turkish Lira</option>
+                            <option data-content='<span class="flag-icon flag-icon-tw "></span> New Taiwan Dollar'>New Taiwan Dollar</option>
+                            <option data-content='<span class="flag-icon flag-icon-za "></span> South African Rand'>South African Rand</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+
+            </div>
+
+            <!-- 
+            <div class="drop">
+                <select class="selectpicker" data-width="fit">
+                    
+            </select>
+            </div>
+             -->
+
+
+        </div>
+    </header>
+
+    <script src="//unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="//unpkg.com/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="//unpkg.com/bootstrap-select@1.12.4/dist/js/bootstrap-select.min.js"></script>
+    <script src="//unpkg.com/bootstrap-select-country@4.0.0/dist/js/bootstrap-select-country.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
