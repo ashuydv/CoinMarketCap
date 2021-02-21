@@ -45,9 +45,9 @@
                 </ul>
             </div>
 
-            <div class="drop">
+            <div class="drop d-flex justify-content-center">
                 <div class="lang">
-                    <select class="selectpicker" data-live-search="true">
+                    <select class="selectpicker" data-live-search="true" data-live-search-icon="true">
                         <optgroup label="Popular Languages" class="popLang">    
                             <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
                             <option data-content='<span class="flag-icon flag-icon-ru"></span> Русский'>Русский</option>
@@ -137,101 +137,92 @@
         </div>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="./images/coincap.jpeg" class="coincap" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+            <div class="col-md-6 col-lg-6 col-11 mx-auto my-auto search-box">
+                <div class="input-group form-container">
+                    <span class="input-group-btn">
+                        <button class="btn btn-search">
+                          <i class="fas fa-search"></i>
+                        </button>
+                    </span>
+                    <input type="text" name="search" class="form-control search-input" placeholder='Search' autofocus="autofocus" autocomplete="off" onclick="setBgToDark()">
+                </div>
+            </div>
             </div>
         </nav>
 
-        <!-- menu 
-        <nav class="menu-bar">
-            <ul>
-                <img src="coincap.png" />
-                <li><a href="#">Cryptocurrencies</a></li>
-                <div class="sub-menu-1">
-                    <ul>
-                        <li> <a href="#">Ranking</a></li>
-                        <li> <a href="#">Global Charts</a></li>
-                        <li> <a href="#">Spotlight</a></li>
-                        <li> <a href="#">Gainers and Losers</a></li>
-                        <li> <a href="#">Recently Added</a></li>
-                        <li> <a href="#">Historical Snapshots</a></li>
+        <!-- Navbar
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img src="./images/coincap.jpeg" alt=""> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Cryptocurrencies</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Exchanges
+                  </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Watchlist</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">learn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Buy Bitcoin</a>
+                        </li>
                     </ul>
-                </div>
 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                </svg>
+                    <div class="mx-2">
+                        <button class="btn btn-light bg-light">Login</button>
+                        <button class="btn btn-primary">Sign up</button>
 
-                <li><a href="#">Exchanges</a>
-                    <div class="sub-menu-2">
-                        <ul>
-                            <li> <a href="#">Spot</a></li>
-                            <li> <a href="#">Derivatives</a></li>
-                            <li> <a href="#">Dex</a></li>
-                            <li> <a href="#">Where to Buy</a></li>
-
-                        </ul>
                     </div>
-                </li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Watchlist</a></li>
-                <li><a href="#">Products</a></li>
-                <div class="sub-menu-3">
-                    <ul>
-                        <li> <a href="#">Conveter</a></li>
-                        <li> <a href="#">Mobile Apps</a></li>
-                        <li> <a href="#">Blockchain Explorer</a></li>
-                        <li> <a href="#">Interest</a></li>
-                        <li> <a href="#">Jobs Board</a></li>
-                        <li> <a href="#">Crypto API</a></li>
-                        <li> <a href="#">Site Widgets</a></li>
-                    </ul>
-                </div>
-                <li><a href="#">Learn</a></li>
-                <div class="sub-menu-4">
-                    <ul>
-                        <li> <a href="#">Alexandria</a></li>
-                        <li> <a href="#">Earn</a></li>
-                        <li> <a href="#">Glossary</a></li>
-                        <li> <a href="#">Newsletter</a></li>
-                        <li> <a href="#">Events Calender</a></li>
-                        <li> <a href="#">Methodology</a></li>
 
-                    </ul>
-                </div>
-                <li><a href="#">Buy Bitcoin</a></li>
-            </ul>
+                    <form class="d-flex">
+                        <i class="fal fa-search"></i>
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 
+                    </form>
+                </div>
+            </div>
         </nav>
-
-        -->
+         -->
     </header>
 
     <script src="//unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>

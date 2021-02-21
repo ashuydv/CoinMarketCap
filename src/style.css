@@ -144,3 +144,44 @@
 .coincap {
     position: absolute;
 }
+
+.fa-moon:before {
+    content: "\f186";
+    position: absolute;
+    top: 3.5%;
+    left: 92%;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+img {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.container-fluid {
+    margin-top: 12px;
+    padding-top: 18px;
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.nav-item {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.search-box {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
