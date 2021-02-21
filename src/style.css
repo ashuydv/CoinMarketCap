@@ -185,3 +185,126 @@ img {
     position: absolute;
     transform: translate(-50%, -50%);
 }
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+img {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.container-fluid {
+    margin-top: 12px;
+    padding-top: 18px;
+    font-weight: 600;
+    font-size: 12px;
+    color: black;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.nav-item {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.dropdown-item {
+    padding: 15px;
+    margin: 3px;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(197, 240, 243);
+}
+
+.dropdown-menu {
+    width: 200px;
+}
+
+.collapse {
+    font-weight: 500;
+    color: black;
+}
+
+.input-group-text {
+    background: #fff;
+    border: 1px solid #222!important;
+    border-right: 0px!important;
+    outline: none;
+    margin-right: -5px;
+}
+
+.form-control {
+    border: 1px solid #222!important;
+    border-left: 0px!important;
+    border-top-left-radius: 0px!important;
+    border-bottom-left-radius: 0px!important;
+    width: 50%!important;
+    padding-left: 1rem;
+}
+
+.navbar {
+    display: flex;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navbar-left {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem!important;
+    padding: 0!important;
+    align-items: center;
+    margin-left: -5rem!important;
+}
+
+.navbar-brand {
+    display: flex;
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem!important;
+    padding: 0!important;
+    align-items: center;
+    margin-left: 5rem!important;
+}
+
+.fa-search {
+    width: 10%;
+}
+
+.input-group {
+    display: flex;
+    width: fit-content;
+}
+
+.input-group-text {
+    background: #fff;
+    border: 1px solid #222!important;
+    border-right: 0px!important;
+    outline: none;
+    width: 10%;
+}
+
+.form-control {
+    border: 1px solid #222!important;
+    border-left: 0px!important;
+    border-top-left-radius: 0px!important;
+    border-bottom-left-radius: 0px!important;
+    padding-left: 1rem;
+}
+
+.input-group input {
+    width: 1%;
+}
+
+.navbar {
+    background: transparent!important;
+}
