@@ -1,0 +1,58 @@
+@import url("./style.css");
+.navbar>.container-fluid .navbar-brand {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+}
+
+.derivative .container-fluid {
+    display: flex;
+    margin: 3rem 2rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.derivative .bitcoin h1 {
+    margin: 0!important;
+    position: absolute;
+    left: 8%;
+    top: 55%;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.derivative .bitcoin h1 i {
+    font-size: 2rem;
+    padding: 0px;
+}
+
+.derivative .table {
+    width: 100%;
+    max-width: 90%;
+    margin-bottom: 20px;
+    margin-left: 5rem;
+    margin-top: 10rem;
+}
+
+.derivative .table img {
+    width: 10%;
+}
+
+.tables .btn-link,
+.btn-link:active,
+.btn-link:focus,
+.btn-link:hover {
+    border-color: none;
+    margin-left: 30px;
+    border-radius: 0px;
+}
+
+.active {
+    border-radius: 1rem!important;
+}

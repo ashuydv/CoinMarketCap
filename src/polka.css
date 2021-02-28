@@ -1,0 +1,9 @@
+td img {
+    width: 10%;
+    height: auto;
+    outline: none;
+}
+
+.graph img {
+    width: 100%;
+}

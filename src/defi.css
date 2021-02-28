@@ -1,0 +1,28 @@
+@import url("./style.css");
+.derivative .table {
+    width: 100%;
+    max-width: 90%;
+    margin-bottom: 20px;
+    margin-left: 5rem;
+}
+
+.derivative .table img {
+    width: 10%;
+}
+
+.tables .btn-link,
+.btn-link:active,
+.btn-link:focus,
+.btn-link:hover {
+    border-color: none;
+    margin-left: 30px;
+    border-radius: 0px;
+}
+
+.active {
+    border-radius: 1rem!important;
+}
+
+.graph img {
+    width: 100%!important;
+}

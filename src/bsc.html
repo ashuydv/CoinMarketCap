@@ -15,6 +15,7 @@
     <!-- custom css -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./polka.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" integrity="sha512-Cv93isQdFwaKBV+Z4X8kaVBYWHST58Xb/jVOcV9aRsGSArZsgAnFIhMpDoMDcFNoUtday1hdjn0nGp3+KZyyFw==" crossorigin="anonymous" />
     <title>Coin Market Cap</title>
@@ -201,7 +202,7 @@
                                     Learn
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Alexandria</a></li>
+                                    <li><a class`="dropdown-item" href="#">Alexandria</a></li>
                                     <li><a class="dropdown-item" href="#">Earn</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
@@ -243,20 +244,10 @@
     <!----------------------- body-head-start--------------------------------->
     <div class="container-fluid slides">
         <div class="container cards">
-            <h1>Today's Cryptocurrency Prices by Market Cap</h1>
+            <h1>Top Binance Smart Chain Tokens by Market Capitalization</h1>
             <div class="box">
                 <p>
-                    The global crypto market cap is <span>$1.57T</span> , a <span><a href="#"><i class="fas fa-sort-up"></i> 1.15%</a></span>, increase over the last day. <br />
-                    </span>
-                </p>
-                <p>
-                    <span id="dots"></span>
-                    <button onclick="myFunction()" id="myBtn" class="button">Read more</button><br />
-                    <span id="more">
-                        The total crypto market volume over the last 24 hours is <b>$260.28B</b>, which makes a <b class="sort"><i class="fas fa-sort-up"></i> 29.80%</b> increase. The total volume in DeFi is currently <b>$24.89B</b>, <b>9.56%</b> of the total crypto market 24-hour volume. The volume of all stable coins is now <b>$213.81B</b>, which is <b>82.15%</b> of the total crypto market 24-hour volume.
-                        Bitcoin's price is currently <b>$47,848.85</b>.
-                        Bitcoin’s dominance is currently <b>61.79%</b>, an increase of <b class="sort"><i class="fas fa-sort-up"></i> 0.22%</b> over the day.
-                    </span>
+                    Binance Smart Chain dual-chain architecture will empower its users to build their decentralized apps and digital assets on one blockchain and take advantage of the fast trading to exchange on the other.
                 </p>
             </div>
         </div>
@@ -312,67 +303,70 @@
                 <li class="btn btn-link watch">
                     <a href="#"><i class="far fa-star"></i> Watchlist <button class="border"></button></a>
                 </li>
-                <li class="btn btn-link active"><a href="./index.html">Cryptocurrencies</a> </li>
+                <li class="btn btn-link "><a href="./index.html">Cryptocurrencies</a> </li>
                 <li class="btn btn-link "> <a href="./derivatives.html">Derivatives</a> </li>
                 <li class="btn btn-link "> <a href="./defi.html">DeFi</a> </li>
                 <li class="btn btn-link"> <a href="./polka.html">Polkadot Eco</a></li>
                 <li class="btn btn-link"> <a href="./nft.html">NFTs Collectibles</a> </li>
-                <li class="btn btn-link "> <a href="./bsc.html">BSC Eco</a> </li>
+                <li class="btn btn-link active"> <a href="./bsc.html">BSC Eco</a> </li>
                 <li class="btn btn-link "> <a href="./yield.html">Yield Farming</a> </li>
                 <li class="btn btn-link">
                     <a href="#"><i class="fal fa-sliders-h"></i> Filter</a>
                 </li>
             </ul>
         </div>
-        <div class="tables">
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col">#<i class="fas fa-sort-up"></i></th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">24h</th>
-                        <th scope="col">7d</th>
-                        <th scope="col">MarketCap</th>
-                        <th scope="col">Volume</th>
-                        <th scope="col">Circulating Supply</th>
-                        <th scope="col">Last 7 days</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row"><i class="far fa-star"></i></i>
-                        </th>
-                        <td>1</td>
-                        <td> <i class="fab fa-bitcoin"></i> Bitcoin <small>BTC</small> </td>
-                        <td>$47,714.97</td>
-                        <td class="up"><i class="fas fa-sort-up">0.19%</i></td>
-                        <td class="down"><i class="fas fa-sort-down">15.48%</i></td>
-                        <td>$887,595,686,447</td>
-                        <td>$62,595,686,447 <small>1,321,706 BTC</small></td>
-                        <td>
-                            <small><i class="fas fa-info-circle"></i></small> 18,639,712 BTC
-                            <div class="progress">
-                                <div class="progress-bar" style="width:70%"></div>
-                            </div>
-                        </td>
-                        <td class="graph">
-                            <img src="./images/1.png" alt="">
-                            <div class="btn-group">
-                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-ellipsis-v "></i>
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <button class="dropdown-item" type="button">View Charts</button>
-                                    <button class="dropdown-item" type="button">View Market </button>
-                                    <button class="dropdown-item" type="button">View Details </button>
+        <div class="tables derivative">
+            <div class="container-fluid">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">#<i class="fas fa-sort-up"></i></th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">24h</th>
+                            <th scope="col">7d</th>
+                            <th scope="col">MarketCap</th>
+                            <th scope="col">Volume</th>
+                            <th scope="col">Circulating Supply</th>
+                            <th scope="col">Last 7 days</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><i class="far fa-star"></i></i>
+                            </th>
+                            <td>1</td>
+                            <td> <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png" alt=""> Binance Coin<small>BNB</small> </td>
+                            <td>$47,714.97</td>
+                            <td class="up"><i class="fas fa-sort-up">0.19%</i></td>
+                            <td class="down"><i class="fas fa-sort-down">15.48%</i></td>
+                            <td>$887,595,686,447</td>
+                            <td>$62,595,686,447 <small>1,321,706 BTC</small></td>
+                            <td>
+                                <small><i class="fas fa-info-circle"></i></small> 18,639,712 BTC
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:70%"></div>
                                 </div>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                            </td>
+                            <td class="graph">
+                                <img src="./images/1.png" alt="">
+                                <div class="btn-group">
+                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-ellipsis-v "></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <button class="dropdown-item" type="button">View Charts</button>
+                                        <button class="dropdown-item" type="button">View Market </button>
+                                        <button class="dropdown-item" type="button">View Details </button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
 
             <!--- page------------------------------------------------- -->
             <div class="page">
@@ -412,7 +406,7 @@
         </div>
     </section>
 
-    /
+
     <!----------------------- tables-end--------------------------------------->
 
     <!-- footer 

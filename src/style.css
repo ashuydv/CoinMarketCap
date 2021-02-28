@@ -729,6 +729,15 @@ tr {
     border-radius: 1rem;
 }
 
+.tables .btn-link,
+.btn-link:active,
+.btn-link:focus,
+.btn-link:hover {
+    border-color: none;
+    margin-left: 30px;
+    border-radius: 0px;
+}
+
 
 /* crypto-table-end*/
 
