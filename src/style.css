@@ -888,3 +888,10 @@ img {
     padding: .5rem;
     color: #337ab7;
 }
+
+.mail .form-control {
+    width: 100%!important;
+    border: 1px solid black!important;
+    border-radius: 0;
+    /* padding-left: 1rem; */
+}
