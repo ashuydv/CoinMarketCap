@@ -744,26 +744,31 @@ tr {
 
 /* table-end */
 
-
-/* footer
-
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-}
-
-.footer-left,
-.footer-right {
-    border: 1px solid black;
+    padding: 10px;
+    margin: 15px;
 }
 
 .footer-left ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style: none;
+}
 
-    
+img {
+    padding: 2px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.footer-left li {
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .footer-right {
@@ -776,4 +781,110 @@ tr {
     display: flex;
 }
 
- */
+.footer-right ul {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.footer-right a {
+    text-decoration: none;
+    font-size: 14px;
+    color: grey;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.footer-right a :hover {
+    color: rgb(144, 185, 247);
+}
+
+
+/*.form-control {
+    border-left: 0px;
+    width: 210px !important;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(207, 214, 228);
+    border-radius: 8px !important;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    font-size: 14px;
+    height: 48px;
+    line-height: 21px;
+}*/
+
+.mail .col-auto {
+    padding: 2px;
+    margin: 2px;
+}
+
+.mail .left {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.mail .left h2 {
+    position: relative;
+    margin-left: 0rem!important;
+    padding-left: -5px!important;
+}
+
+.mail .right img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    transform: translate(-5%, 15%);
+}
+
+.mail .jumbotron {
+    display: flex;
+    padding-top: 25px;
+    justify-content: space-around;
+    margin-top: 15px;
+    align-items: center;
+    background-color: rgb(241, 245, 247);
+    place-self: start;
+}
+
+.mail .uno {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    place-self: start;
+}
+
+.mail .round {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    width: 75%;
+    margin-top: -1rem;
+}
+
+.mail .form-control {
+    border: 1px solid #222!important;
+    border-left: 0px!important;
+    border-top-left-radius: 0px!important;
+    border-bottom-left-radius: 0px!important;
+    width: 100%!important;
+    /* padding-left: 1rem;*/
+}
+
+.footer-bottom p {
+    padding-left: 3rem;
+}
+
+.fa-circle {
+    font-size: 1rem;
+    padding: .5rem;
+    color: #337ab7;
+}
