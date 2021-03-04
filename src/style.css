@@ -8,7 +8,7 @@
 .container-fluid {
     display: flex;
     justify-content: space-between;
-    margin: 3px;
+    margin: 0px;
     padding: 0;
     font-weight: 600;
     font-size: 12px;
@@ -138,7 +138,7 @@
 .fa-moon:before {
     content: "\f186";
     position: absolute;
-    top: 16px;
+    top: 1.75%;
     left: 90%;
 }
 
@@ -236,6 +236,7 @@ img {
     display: flex;
     font-size: 15px;
     font-weight: 500;
+    margin-bottom: 0px;
 }
 
 .navbar-left {
@@ -244,7 +245,7 @@ img {
     margin: 0rem!important;
     padding: 0!important;
     align-items: center;
-    margin-left: -5rem!important;
+    margin-left: -8.5rem!important;
 }
 
 .navbar-brand {
@@ -307,13 +308,15 @@ a {
 }
 
 .slides {
-    padding: 1rem 0rem;
     background: linear-gradient(#f1f1f1, #fff);
+    height: 26vh;
 }
 
 .cards {
+    position: relative;
     margin-left: 8rem;
     margin-top: -3rem;
+    height: auto;
 }
 
 .cards h1 {
@@ -336,6 +339,7 @@ span a {
 
 .read {
     color: #222;
+    position: fixed;
     text-decoration: underline;
 }
 
@@ -346,6 +350,11 @@ span a {
 #more {
     display: none;
     color: #222;
+    position: fixed;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    width: 40%;
     font-weight: normal!important;
 }
 
@@ -459,12 +468,18 @@ h5 {
 
 /* table */
 
+.tables {
+    margin-top: 5rem;
+    margin-left: auto;
+}
+
 .tables ul {
     list-style: none;
-    width: 85%;
-    position: absolute;
-    left: 6%;
+    width: max-content;
+    position: sticky;
     display: flex;
+    margin-left: -5rem;
+    margin-bottom: -5rem;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
@@ -643,13 +658,16 @@ tr {
 }
 
 .page div {
-    margin: 0 5rem;
+    margin: 0 5em;
 }
 
 .page ul {
     width: 100%;
-    position: inherit;
-    margin: 0rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2.5rem;
+    margin-block-end: auto;
 }
 
 .page .select {
@@ -657,8 +675,8 @@ tr {
     align-items: center;
     width: 100%;
     padding-left: 10rem!important;
-    margin-left: 2rem;
-    text-align: right;
+    margin-left: 35rem;
+    margin-right: auto;
 }
 
 .page .select p {
